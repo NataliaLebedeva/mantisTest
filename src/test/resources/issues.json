@@ -1,0 +1,47 @@
+{
+  "issue_1": {
+    "category":"General",
+    "reproducibility":"always",
+    "severity":"block",
+    "Priority":"urgent",
+    "SelectProfile":{
+      "Platfor":"${}",
+      "OS":"${}",
+      "OSversion":"${}"},
+    "AssignTo":"${}",
+    "Summary":"theme_",
+    "Description":"description_",
+    "stepsToReproduse":"reproduseStepse_",
+    "AdditionalInfo":"additionalInfo_"
+  },
+  "issue_2": {
+    "category":"General",
+    "reproducibility":"",
+    "severity":"",
+    "Priority":"",
+    "SelectProfile":{
+      "Platfor":"",
+      "OS":"",
+      "OSversion":""},
+    "AssignTo":"",
+    "Summary":"",
+    "Description":"",
+    "stepsToReproduse":"",
+    "AdditionalInfo":""
+  },
+  "issue_3": {
+    "category":"General",
+    "reproducibility":"",
+    "severity":"",
+    "Priority":"",
+    "SelectProfile":{
+      "Platfor":"",
+      "OS":"",
+      "OSversion":""},
+    "AssignTo":"",
+    "Summary":"",
+    "Description":"",
+    "stepsToReproduse":"",
+    "AdditionalInfo":""
+  }
+}

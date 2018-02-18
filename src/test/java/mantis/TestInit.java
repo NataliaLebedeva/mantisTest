@@ -9,6 +9,7 @@ public class TestInit extends TestNGBase {
 
     @BeforeSuite(alwaysRun = true)
     public static void steUp() {
+//        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         WebSite.init(MantisSite.class);
 
     }

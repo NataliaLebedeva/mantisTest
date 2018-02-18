@@ -14,10 +14,10 @@ public class MantisSite extends WebSite {
     @JPage(url = "login_page.php")
     public static LoginPage loginPage;
 
-    @JPage()
+    @JPage(url = "my_view_page.php")
     public static MyViewPage myViewPage;
 
-    @JPage()
+    @JPage(url = "bug_report_page.php")
     public static BugReportPage reportPage;
 
     public static void login(User user) {

@@ -8,10 +8,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginForm extends Form<User> {
 
-    @FindBy(css = "[id='username']")
+    @FindBy(id="username")
     private TextField login;
 
-    @FindBy(css = "[id='password']")
+    @FindBy(id = "password")
     private TextField password;
 
     @FindBy(css = "[type='submit']")

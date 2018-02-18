@@ -3,45 +3,45 @@
     "category":"General",
     "reproducibility":"always",
     "severity":"block",
-    "Priority":"urgent",
-    "SelectProfile":{
-      "Platform":"2.11.1",
-      "OS":"Windows",
-      "OsVersion":"Win10"},
-    "AssignTo":"dev1",
-    "Summary":"theme_1",
-    "Description":"description_1",
+    "priority":"urgent",
+    "selectProfile":{
+      "platform":"2.11.1",
+      "os":"Windows",
+      "osVersion":"Win10"},
+    "assignTo":"dev1",
+    "summary":"theme_1",
+    "description":"description_1",
     "stepsToReproduce":"reproduceSteps_1",
-    "AdditionalInfo":"additionalInfo_1"
+    "additionalInfo":"additionalInfo_1"
   },
   "issue_2": {
     "category":"General",
     "reproducibility":"",
     "severity":"",
-    "Priority":"",
-    "SelectProfile":{
-      "Platform":"",
-      "OS":"",
-      "OsVersion":""},
-    "AssignTo":"",
-    "Summary":"",
-    "Description":"",
+    "priority":"",
+    "selectProfile":{
+      "platform":"",
+      "os":"",
+      "osVersion":""},
+    "assignTo":"",
+    "summary":"",
+    "description":"",
     "stepsToReproduce":"",
-    "AdditionalInfo":""
+    "additionalInfo":""
   },
   "issue_3": {
     "category":"General",
     "reproducibility":"",
     "severity":"",
-    "Priority":"",
-    "SelectProfile":{
-      "Platform":"",
-      "OS":"",
-      "OsVersion":""},
-    "AssignTo":"",
-    "Summary":"",
-    "Description":"",
+    "priority":"",
+    "selectProfile":{
+      "platform":"",
+      "os":"",
+      "osVersion":""},
+    "assignTo":"",
+    "summary":"",
+    "description":"",
     "stepsToReproduce":"",
-    "AdditionalInfo":""
+    "additionalInfo":""
   }
 }

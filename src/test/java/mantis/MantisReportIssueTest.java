@@ -1,6 +1,6 @@
 package mantis;
 
-import mantis.entities.IssueData;
+import mantis.entities.Issue;
 import mantis.entities.User;
 import mantis.site.MantisSite;
 import org.testng.annotations.BeforeMethod;
@@ -18,7 +18,8 @@ public class MantisReportIssueTest extends TestInit{
         System.out.println("mantis test has been started");
         MantisSite.login(User.Lead1);
         MantisSite.myViewPage.header.reportIssue.click();
-        MantisSite.reportPage.issueForm.submitIssue(IssueData.DEFAULT);
+//        MantisSite.reportPage.issueForm.submit(Issue.DEFAULT);
+//        MantisSite.reportPage.mainMenu
 
     }
 }

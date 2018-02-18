@@ -11,9 +11,6 @@ public class LoginForm extends Form<User> {
     @FindBy(css = "[id='username']")
     private TextField login;
 
-    @FindBy(css = "[type='submit']")
-    private Button preSubmit;
-
     @FindBy(css = "[id='password']")
     private TextField password;
 
@@ -22,7 +19,7 @@ public class LoginForm extends Form<User> {
 
     public void loginAsUser(User user) {
         login.setValue(user.getLogin());
-        preSubmit.click();
+        submit.click();
         password.setValue(user.getPassword());
         submit.click();
     }

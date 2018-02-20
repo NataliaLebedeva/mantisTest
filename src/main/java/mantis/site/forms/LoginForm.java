@@ -3,7 +3,7 @@ package mantis.site.forms;
 import com.epam.jdi.uitests.web.selenium.elements.common.Button;
 import com.epam.jdi.uitests.web.selenium.elements.common.TextField;
 import com.epam.jdi.uitests.web.selenium.elements.composite.Form;
-import mantis.entities.User;
+import mantis.entities.user.User;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginForm extends Form<User> {

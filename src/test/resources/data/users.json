@@ -1,0 +1,14 @@
+{
+  "user_1": {
+    "login": "dev1",
+    "password": "develop"
+  },
+  "user_2": {
+    "login": "tester1",
+    "password": "test"
+  },
+  "user_3": {
+    "login": "lead1",
+    "password": "leader"
+  }
+}

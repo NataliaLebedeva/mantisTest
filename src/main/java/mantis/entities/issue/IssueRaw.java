@@ -1,16 +1,14 @@
-package mantis.entities;
+package mantis.entities.issue;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
 @AllArgsConstructor
-public class Issue {
-//    public static final Issue DEFAULT = new Issue();
+public class IssueRaw {
+//    public static final IssueRaw DEFAULT = new IssueRaw();
 
     private String category;
     private String reproducibility;

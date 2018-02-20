@@ -1,4 +1,4 @@
-package mantis.entities;
+package mantis.entities.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -3,7 +3,7 @@ package mantis.site;
 import com.epam.jdi.uitests.web.selenium.elements.composite.WebSite;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JPage;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JSite;
-import mantis.entities.User;
+import mantis.entities.user.User;
 import mantis.site.pages.BugReportPage;
 import mantis.site.pages.LoginPage;
 import mantis.site.pages.MyViewPage;

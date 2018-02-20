@@ -1,47 +1,50 @@
 {
   "issue_1": {
-    "category":"General",
-    "reproducibility":"always",
-    "severity":"block",
-    "priority":"urgent",
-    "selectProfile":{
-      "platform":"2.11.1",
-      "os":"Windows",
-      "osVersion":"Win10"},
-    "assignTo":"dev1",
-    "summary":"theme_1",
-    "description":"description_1",
-    "stepsToReproduce":"reproduceSteps_1",
-    "additionalInfo":"additionalInfo_1"
+    "category": "General",
+    "reproducibility": "всегда",
+    "severity": "блокирующее",
+    "priority": "срочный",
+    "profile": {
+      "platform": "2.11.1",
+      "os": "Windows",
+      "osVersion": "Win10"
+    },
+    "assignTo": "user_1",
+    "summary": "regEx_summary",
+    "description": "regEx_1",
+    "stepsToReproduce": "regEx_1",
+    "additionalInfo": "regEx_1"
   },
   "issue_2": {
-    "category":"General",
-    "reproducibility":"",
-    "severity":"",
-    "priority":"",
-    "selectProfile":{
-      "platform":"",
-      "os":"",
-      "osVersion":""},
-    "assignTo":"",
-    "summary":"",
-    "description":"",
-    "stepsToReproduce":"",
-    "additionalInfo":""
+    "category": "General",
+    "reproducibility": "always",
+    "severity": "block",
+    "priority": "urgent",
+    "profile": {
+      "platform": "2.11.1",
+      "os": "Windows",
+      "osVersion": "Win10"
+    },
+    "assignTo": "dev1",
+    "summary": "theme_2",
+    "description": "description_2",
+    "stepsToReproduce": "reproduce steps_2",
+    "additionalInfo": "additional info_2"
   },
   "issue_3": {
-    "category":"General",
-    "reproducibility":"",
-    "severity":"",
-    "priority":"",
-    "selectProfile":{
-      "platform":"",
-      "os":"",
-      "osVersion":""},
-    "assignTo":"",
-    "summary":"",
-    "description":"",
-    "stepsToReproduce":"",
-    "additionalInfo":""
+    "category": "General",
+    "reproducibility": "",
+    "severity": "",
+    "priority": "",
+    "profile": {
+      "platform": "",
+      "os": "",
+      "osVersion": ""
+    },
+    "assignTo": "",
+    "summary": "",
+    "description": "",
+    "stepsToReproduce": "",
+    "additionalInfo": ""
   }
 }

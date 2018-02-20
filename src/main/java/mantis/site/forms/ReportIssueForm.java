@@ -1,18 +1,18 @@
 package mantis.site.forms;
 
+import com.epam.jdi.uitests.web.selenium.elements.common.Button;
 import com.epam.jdi.uitests.web.selenium.elements.common.TextArea;
 import com.epam.jdi.uitests.web.selenium.elements.common.TextField;
 import com.epam.jdi.uitests.web.selenium.elements.complex.Dropdown;
 import com.epam.jdi.uitests.web.selenium.elements.composite.Form;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JFindBy;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.objects.JDropdown;
-import mantis.entities.Issue;
-import org.openqa.selenium.WebElement;
+import mantis.entities.issue.Issue;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
-
 public class ReportIssueForm extends Form<Issue> {
+
+    private OsProfileForm osProfileForm = new OsProfileForm();
 
     @JDropdown(
             jroot = @JFindBy(id = "category_id"),
@@ -27,19 +27,19 @@ public class ReportIssueForm extends Form<Issue> {
     private Dropdown reproducibility;
 
     @JDropdown(
-            jroot = @JFindBy(id="severity"),
+            jroot = @JFindBy(id = "severity"),
             jlist = @JFindBy(tagName = "option")
     )
     private Dropdown severity;
 
     @JDropdown(
-            jroot = @JFindBy(id="priority"),
+            jroot = @JFindBy(id = "priority"),
             jlist = @JFindBy(tagName = "option")
     )
     private Dropdown priority;
 
     @JDropdown(
-            jroot = @JFindBy(id="handler_id"),
+            jroot = @JFindBy(id = "handler_id"),
             jlist = @JFindBy(tagName = "option")
     )
     private Dropdown assignTo;
@@ -56,12 +56,24 @@ public class ReportIssueForm extends Form<Issue> {
     @FindBy(id = "additional_info")
     private TextArea additionalInfo;
 
-    @Override
-    public void submit(Issue data) {
-//        category.select("General");
-        reproducibility.select("всегда");
-        severity.select("малое");
-        priority.select("низкий");
+    @FindBy(css = "[type ='submit']")
+    private Button submit;
 
+
+    @Override
+    public void submit(Issue issue) {
+        reproducibility.select(issue.getReproducibility());
+        severity.select(issue.getSeverity());
+        priority.select(issue.getPriority());
+
+        osProfileForm.fill(issue.getProfile());
+
+        assignTo.select(issue.getAssignTo().getLogin());
+        summary.newInput(issue.getSummary());
+        description.sendKeys(issue.getDescription());
+        steps.sendKeys(issue.getStepsToReproduce());
+        additionalInfo.sendKeys(issue.getAdditionalInfo());
+
+        submit.click();
     }
 }

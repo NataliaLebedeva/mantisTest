@@ -1,10 +1,14 @@
 package mantis;
 
-import mantis.entities.Issue;
-import mantis.entities.User;
+import mantis.entities.issue.Issue;
+import mantis.entities.user.User;
+import mantis.enums.MANTIS_PAGES;
 import mantis.site.MantisSite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import static mantis.utils.ResourceLoader.getIssue;
+import static mantis.utils.ResourceLoader.getUser;
 
 public class MantisReportIssueTest extends TestInit{
 
@@ -15,11 +19,12 @@ public class MantisReportIssueTest extends TestInit{
 
     @Test
     public void reportTest() {
-        System.out.println("mantis test has been started");
-        MantisSite.login(User.Lead1);
-        MantisSite.myViewPage.header.reportIssue.click();
-//        MantisSite.reportPage.issueForm.submit(Issue.DEFAULT);
-//        MantisSite.reportPage.mainMenu
+        Issue issue = getIssue("issue_1");
+        User user = getUser("user_1");
 
+        MantisSite.login(user);
+        MantisSite.myViewPage.header.reportIssue.click();
+        MantisSite.reportPage.issueForm.submit(issue);
+        MantisSite.reportPage.menu.select(MANTIS_PAGES.VIEW_ISSUES.getPage());
     }
 }
